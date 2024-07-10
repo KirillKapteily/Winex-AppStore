@@ -30,6 +30,14 @@ list-style: none;
     gap: 50px;
 }
 
+.main-list2{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+}
+
 .download-info{
     display: flex;
     color: azure;
@@ -53,6 +61,7 @@ list-style: none;
 .winexappstore{
     color: azure;
     font-size: 20px;
+    margin-top: 13px;
     text-decoration: none;
 }
 
@@ -60,8 +69,30 @@ header{
     display: flex;
 }
 
+.mailto{
+    text-decoration: none;
+    color: azure;
+}
+
+.footer-p{
+    color: azure;  
+}
+
+.footer-link{
+    text-decoration: none;
+    color: azure;
+}
+
+.footer-list{
+    list-style: none;
+}
+
 .product-img{
     display: flex;
+}
+
+.pro-vote{
+    margin-left: 30px; 
 }
 
 .download-title{
@@ -73,6 +104,7 @@ header{
     font-size: 20px;
     display: flex;
     justify-content: center;
+    margin-bottom: 70px;
 }
 
 .container{
