@@ -2,3 +2,80 @@ body{
     font-family: "Poppins";
     background-color: rgb(35, 35, 37);
 }
+.header-list{
+list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+  margin-right: auto;
+  width: 676px;
+  margin-bottom: 50px;
+}
+
+.main-link{
+    text-decoration: none;
+    color: azure;
+}
+
+.header-link{
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+}
+
+.main-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.download-info{
+    display: flex;
+    color: azure;
+    text-decoration: none;
+}
+
+.main-title{
+    color: azure;
+    text-align: center;
+}
+
+.download-button{
+    text-decoration: none;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.winexappstore{
+    color: azure;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+}
+
+.product-img{
+    display: flex;
+}
+
+.download-title{
+    margin-left: 30px;
+}
+
+.download-description{
+    color: azure;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1200px;
+}
