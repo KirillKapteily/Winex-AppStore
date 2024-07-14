@@ -27,7 +27,8 @@ list-style: none;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 100px;
+    margin-bottom: 50px;
 }
 
 .main-list2{
