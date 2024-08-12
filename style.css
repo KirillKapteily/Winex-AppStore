@@ -12,9 +12,33 @@ list-style: none;
   margin-bottom: 50px;
 }
 
+.main-item{
+    backdrop-filter: blur(10px);
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 1px solid slategrey;
+}
+
+.main-item:hover{
+    transform: scale(1.1);
+}
+
+.card-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .main-link{
     text-decoration: none;
     color: azure;
+    
+}
+
+.radius{
+    border-radius: 10px;
 }
 
 .header-link{
@@ -27,7 +51,7 @@ list-style: none;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 50px;
     margin-bottom: 50px;
 }
 
@@ -54,9 +78,9 @@ list-style: none;
     text-decoration: none;
     color: azure;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    /* justify-content: center;
+    align-items: center; */
+    margin-left:30px ;
 }
 
 .winexappstore{
@@ -107,6 +131,55 @@ header{
     justify-content: center;
     margin-bottom: 70px;
 }
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+   }
+   
+   .menu-item {
+    position: relative;
+    margin-right: 15px;
+   }
+   
+   .menu-item:hover .submenu {
+    display: block;
+   }
+   
+   .menu-item:hover .menu-link {
+scale: (1.1);
+   }
+   
+   .menu-link {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: rgb(35, 35, 37);
+    color: white;
+   }
+   
+   .submenu {
+    position: absolute;
+    width: 100%;
+    /* top: 100%; */
+    left: 0;
+    margin: 0;
+    list-style: none;
+    padding: 10px;
+    background-color: #cccccc54;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    display: none;
+   }
+
+   .submenu-link{
+    text-decoration: none;
+    color: white;
+   }
+   
 
 .container{
     margin: 0 auto;
