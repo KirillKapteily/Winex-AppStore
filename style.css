@@ -1,11 +1,22 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body{
     font-family: "Poppins";
     background-color: rgb(35, 35, 37);
 }
 .header-list{
 list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 50px;
   margin-right: auto;
   width: 676px;
@@ -13,21 +24,34 @@ list-style: none;
 }
 
 .main-item{
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
     padding: 10px 10px;
     border-radius: 10px;
+    -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+    transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+    -o-transition: background-color 0.3s ease, transform 0.3s ease;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
     border: 1px solid slategrey;
 }
 
 .main-item:hover{
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 .card-title{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
 }
 
@@ -41,6 +65,36 @@ list-style: none;
     border-radius: 10px;
 }
 
+.ad{
+    background-image: url(images/vscode-screen.png);
+    background-position: center;
+    backdrop-filter: blur(10px);
+    height: 300px;
+    z-index: 2;
+}
+
+.ad-title{
+    color: rgb(255, 255, 255);
+}
+
+.ad-p{
+    color: white;
+}
+
+.ad-item{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    backdrop-filter: blur(5px);
+}
+
+.ad-img{
+margin-right: 20px;
+}
+
 .header-link{
     color: azure;
     text-decoration: none;
@@ -49,21 +103,31 @@ list-style: none;
 
 .main-list{
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 50px;
     margin-bottom: 50px;
 }
 
 .main-list2{
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 50px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .download-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: azure;
     text-decoration: none;
@@ -77,10 +141,23 @@ list-style: none;
 .download-button{
     text-decoration: none;
     color: azure;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* justify-content: center;
     align-items: center; */
     margin-left:30px ;
+    width: 105px;
+    background-color: #e0e0e03b;
+    backdrop-filter: blur(10px);
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+}
+
+.download-button:hover{
+    background-color: #bebebe54;
 }
 
 .winexappstore{
@@ -91,6 +168,8 @@ list-style: none;
 }
 
 header{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -113,6 +192,8 @@ header{
 }
 
 .product-img{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -127,8 +208,12 @@ header{
 .download-description{
     color: azure;
     font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 70px;
 }
 
@@ -136,7 +221,10 @@ header{
     margin: 0;
     padding: 0;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    z-index: 1;
    }
    
    .menu-item {
@@ -153,7 +241,11 @@ scale: (1.1);
    }
    
    .menu-link {
+    -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+    transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+    -o-transition: background-color 0.3s ease, transform 0.3s ease;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
     display: block;
     padding: 10px 20px;
     text-decoration: none;
@@ -169,9 +261,10 @@ scale: (1.1);
     margin: 0;
     list-style: none;
     padding: 10px;
-    background-color: #cccccc54;
+    background-color: #ffffff18;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
     display: none;
    }
 
