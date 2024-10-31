@@ -35,6 +35,10 @@ list-style: none;
             transform: scale(1.1);
 }
 
+.footer-p{
+    color: white;
+}
+
 .card-title{
     display: -webkit-box;
     display: -ms-flexbox;
