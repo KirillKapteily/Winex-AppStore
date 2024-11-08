@@ -186,6 +186,34 @@ header{
     display: flex;
 }
 
+.warawing-text{
+    color: white;
+    display: flex;
+align-items: center;
+}
+
+.warawing{
+    max-width: 1200px;
+    padding: 10px 20px;
+border-radius: 5px;
+display: flex;
+flex-wrap: wrap;
+
+align-items: center;
+    background-color: rgba(255, 0, 0, 0.468);
+}
+
+.n{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    fill: aliceblue;
+}
+
+.try{
+    color: rgb(255, 235, 199);
+}
+
 .mailto{
     text-decoration: none;
     color: azure;
