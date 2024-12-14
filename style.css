@@ -192,13 +192,21 @@ header{
 align-items: center;
 }
 
+.w-ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .warawing{
-    max-width: 1200px;
+    max-width: 5200px;
+  
     padding: 10px 20px;
 border-radius: 5px;
 display: flex;
 flex-wrap: wrap;
-
+justify-content: center;
 align-items: center;
     background-color: rgba(255, 0, 0, 0.468);
 }
@@ -320,11 +328,15 @@ scale: (1.1);
     width: 1200px;
 }
 
-@media (min-width:320px) and (max-width:480px) {
+@media (min-width:20px) and (max-width:480px) {
     .container{
       max-width: 320px;   
     }
    
+.w-ul{
+    flex-direction: column;
+    padding-left:0px ;
+}
 
     .header-list{
         display: block;
